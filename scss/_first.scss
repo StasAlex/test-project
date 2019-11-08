@@ -1,5 +1,5 @@
 .first-screen {
-  height: 650px;
+  height: calc(100vh - 101px );
   background: url(../img/svg/first-screen.svg) center center no-repeat;
   background-size: cover;
 }
@@ -15,8 +15,32 @@
 }
 .first-screen-text {
   max-width: 400px;
-  text-align: center;
+  text-align: start;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
+}
+
+@media screen and (max-width: 850px) {
+  .first-screen-title {
+    padding-top: 80px;
+  }
+  .first-screen-title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 550px){
+  .first-screen-title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .first-screen-title {
+    padding-top: 53px;
+    max-width: 290px;
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
