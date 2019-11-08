@@ -1,0 +1,227 @@
+.header{
+  position: relative;
+}
+.language {
+  height: 39px;
+}
+
+.header-switch {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-magnifier {
+  color: rgba(26, 10, 38, 0.5);
+  cursor: pointer;
+}
+
+.switcher {
+  text-transform: uppercase;
+}
+
+.switch-en {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 30px;
+  color: #1A0A26;
+  position: relative;
+  cursor: pointer;
+  margin-left: 48px;
+}
+
+.switch-en::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: rgba(26, 10, 38, 0.5);
+  top: 0;
+  right: -6px;
+}
+
+.switch-fr {
+  font-weight: bold;
+  font-size: 12px;
+  color: #CB4C25;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.menu {
+  height: 62px;
+  background: #CB4C25;
+}
+
+.header__logo a {
+  display: block;
+  height: 100%;
+}
+
+.nav .desktop-nav {
+  display: flex;
+  height: 100%;
+}
+
+.nav .desktop-nav li {
+  margin-left: 59px;
+}
+
+.nav .desktop-nav li:first-child {
+  margin-left: 0;
+}
+
+.nav .desktop-nav li a {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  &:hover{
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .nav .desktop-nav li a {
+    white-space: nowrap ;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .nav .desktop-nav li a {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .nav .desktop-nav li a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav .desktop-nav li {
+    font-size: 12px;
+    margin-left: 30px;
+  }
+}
+
+
+//------------- Mobile Navigation Button ------------------//
+.menu-icon{
+  z-index: 19;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .nav .desktop-nav {
+    display: none;
+  }
+
+  .nav .menu-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+.menu-icon-line{
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: #FFFFFF;
+}
+.menu-icon-line::before{
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: '';
+  width: 30px;
+  height: 5px;
+  background-color: #FFFFFF;
+  transition: transform .2s ease-in, top .2s linear .2s;
+}
+.menu-icon-line::after {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  width: 30px;
+  height: 5px;
+  background-color: #FFFFFF;
+  transition: transform .2s ease-in, top .2s linear .2s;
+}
+.menu-icon.menu-icon-active .menu-icon-line{
+  background-color: transparent;
+}
+.menu-icon.menu-icon-active .menu-icon-line::before{
+  transform: rotate(45deg);
+  top: 0;
+  transition: top .2s linear, transform .2s ease-in .2s;
+}
+.menu-icon.menu-icon-active .menu-icon-line::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top .2s linear, transform .2s ease-in .2s;
+}
+
+//----------------- Mobile Navigation -----------------//
+.mobile-nav{
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 740px;
+  width: 360px;
+  background: #CB4C25;
+  transition: all .4s linear;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.mobile-nav--active{
+  display: block;
+  opacity: 1;
+}
+.mobile-nav__title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #D58E78;
+}
+.mobile-nav-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+.mobile-nav__item{
+  text-align: center;
+  width: 260px;
+  margin-bottom: 70px;
+}
+
+.mobile-nav__link{
+  z-index: 11;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    color: rgba(255, 255, 255, 1);
+  }
+}

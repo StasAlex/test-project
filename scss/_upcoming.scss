@@ -1,0 +1,75 @@
+.upcoming {
+  background: url(../img/svg/upcoming_backgrd.svg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 152px;
+}
+h2.title.upcoming_title {
+  max-width: 520px;
+  margin-bottom: 96px;
+  text-align: center;
+  padding-top: 112px;
+  line-height: 46px;
+  letter-spacing: -1px;
+}
+.meeting_items {
+  display: flex;
+  padding: 0 325px 3px 302px;
+}
+.meeting_item {
+  display: flex;
+  margin-bottom: 71px;
+}
+.date {
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 30px;
+  color: #CB4C25;
+  text-align: center;
+}
+.month {
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1A0A26;
+}
+.item_title {
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.item_info {
+  margin-left: 43px;
+}
+.item_date {
+  padding-top: 6px;
+}
+.item_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+.item_text+p {
+  margin-top: 12px;
+}
+.items_right {
+  margin-top: 120px;
+  margin-left: 68px;
+}
+.items_left {
+  position: relative;
+}
+.items_left::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: #c4c4c4;
+  width: 1px;
+  top: 0;
+  right: -47px;
+  height: 92%;
+}

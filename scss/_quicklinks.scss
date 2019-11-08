@@ -1,0 +1,30 @@
+.quick_links-section {
+  background: #CB4C25;
+}
+.quick_links_wrapper {
+  height: 890px;
+  background: url(../img/svg/quick_links_backgrd.svg);
+}
+.quick_links {
+  margin: 0 auto;
+  max-width: 850px;
+  height: 841px;
+  background: #FFFFFF;
+  position: relative;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+  top: 108px;
+}
+h2.quick_links_title {
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 28px;
+}
+.links_items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links_items_info {
+  width: 275px;
+  height: 148px;
+  margin: 14px 33px 35px 102px;
+}

@@ -1,0 +1,37 @@
+.ccperb {
+  padding: 60px 160px 60px 120px;
+}
+.ccperb_info {
+  margin-right: 90px;
+}
+.title {
+  padding-top: 53px;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 96px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.ccperb_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 479px;
+  margin-bottom: 70px;
+}
+.button {
+  padding: 10px 65px;
+  height: 60px;
+  background: #CB4C25;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 1;
+  transition: 0.2s ease-in;
+}
+.button:hover {
+  background: #FFCFC2;
+  color: #1B0606;
+}

@@ -1,0 +1,36 @@
+.cultur_prop {
+  padding-top: 127px;
+  padding-right: 140px;
+}
+.cultur_prop_img {
+  margin-right: 109px;
+}
+.cultur_prop_title {
+  padding-top: 62px;
+  line-height: 46px;
+  margin-bottom: 53px;
+}
+.cultur_prop_text {
+  margin-bottom: 19px;
+  max-width: 490px;
+}
+.cultur_prop_text+p {
+  margin-bottom: 58px;
+}
+.more_link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #1B0606;
+  text-decoration: none;
+  position: relative;
+}
+.more_link:after {
+  position: absolute;
+  content: url(../img/svg/Polygon.svg);
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: -6px;
+  right: -24px;
+}
